@@ -1,0 +1,43 @@
+
+<!--remember to update for each blog post!-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>The Dragons Den</title>
+    <link>https://fantasydragon14.neocities.org/</link>
+    <atom:link href="https://fantasydragon14.neocities.org/index.xml" rel="self" type="application/rss+xml"/>
+    <description>idk yet</description>
+    <language>en-us</language>
+    <lastBuildDate>
+    <!--get build date from timestampgenerator: RFC 2822 - https://timestampgenerator.com/)-->
+      Mon, 09 Sep 2024 09:05:17 +0000
+    </lastBuildDate>
+    <!--get timestamp from timestampgenerator: - https://timestampgenerator.com/)-->
+    <ttl> 1725872717 </ttl>
+
+
+    <item> (Add an item for every blog post)
+        <!--(Blog Post Title)-->
+        <title> (Blog Post Title) </title>
+        <!--(Ex. https://(Website Title)/blog/blogpost.html)-->
+        <link>(Ex. https://(Website Title)/blog/blogpost.html) </link>
+        <!--(Copy and paste the html down there)-->
+        <description><![CDATA[
+
+           (Copy and paste the html here)
+
+
+        ]]> </description>
+        <!--(Date Blog Published - RFC 2822 - https://timestampgenerator.com/) (Ex. Thu, 11 Jan 2024 17:43:33 +0000)-->
+        <pubDate>(Date Blog Published - RFC 2822 - https://timestampgenerator.com/) (Ex. Thu, 11 Jan 2024 17:43:33 +0000)</pubDate>
+        <!--(Link back to the page) (Ex. https://(Website Title)/blog/blogpost.html)-->
+        <guid>(Link back to the page) (Ex. https://(Website Title)/blog/blogpost.html) </guid>
+
+    </item>
+
+
+
+
+</channel>
+</rss>
