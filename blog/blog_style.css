@@ -1,0 +1,149 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+
+   HTML content. To learn how to do something, just try searching Google for questions like
+
+   "how to change link color." */
+
+
+
+   body {
+
+    background-color: rgb(0, 0, 0);
+
+    color: rgb(0, 160, 147);
+
+    font-family: Verdana;
+
+    text-align: center;
+
+  }
+
+
+
+  h1 {
+
+    color: cyan;
+
+  }
+
+
+
+  p {
+
+    background-color: black;
+
+    color: rgb(0, 160, 147);
+
+    text-align: center;
+
+    font-size: 12px;
+
+  }
+
+
+
+  bar {
+
+    background-color: cyan;
+
+    color: black;
+
+    max-width: 300px;
+
+  }
+
+
+
+  /*
+
+  ul {
+
+    text-align: left;
+
+  }
+
+  */
+
+
+
+  iml {
+
+    text-align: left;
+
+  }
+
+
+
+  /*css for link colors:*/
+
+  a:link {
+
+    color: aqua;
+
+    background-color: transparent;
+
+    text-decoration: none;
+
+  }
+
+
+
+  a:visited {
+
+    color: rgb(255, 0, 255);
+
+    background-color: transparent;
+
+    text-decoration: none;
+
+  }
+
+
+
+  a:hover {
+
+    color: purple;
+
+    background-color: transparent;
+
+    text-decoration: underline;
+
+  }
+
+
+
+  a:active {
+
+    color: rgb(13, 255, 0);
+
+    background-color: transparent;
+
+    text-decoration: underline;
+
+  }
+
+  /*css for link colors end*/
+
+
+
+
+
+  .center {
+
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 50%;
+
+  }
+
+
+
+  .left {
+
+    text-align: left;
+
+  }
