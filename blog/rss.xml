@@ -4,48 +4,48 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
-<channel>
+  <channel>
 
     <title>The Dragons Blog</title>
 
     <link>https://fantasydragon14.neocities.org/</link>
 
-    <atom:link href="https://fantasydragon14.neocities.org/index.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://fantasydragon14.neocities.org/index.xml" rel="self"
+      type="application/rss+xml" />
 
-    <description>FantasyDragon14's blog. Here's gonna be updates to my projects (mostly my personalweb projects i guess).
-     Will update every time i remember and am on my PC to do something about it, probably</description>
+    <description>FantasyDragon14's blog. Here's gonna be updates to my projects (mostly my
+      personalweb projects i guess).
+      Will update every time i remember and am on my PC to do something about it, probably</description>
 
     <language>en-us</language>
 
     <lastBuildDate>
 
-    <!--get build date from timestampgenerator: RFC 2822 - https://timestampgenerator.com/)-->
+      <!--get
+      build date from timestampgenerator: RFC 2822 - https://timestampgenerator.com/)--> Fri, 20 Sep 2024 08:22:46 +0000 </lastBuildDate>
 
-      Fri, 20 Sep 2024 08:14:47 +0000
+    <!--get
+    timestamp from timestampgenerator: - https://timestampgenerator.com/)-->
 
-    </lastBuildDate>
-
-    <!--get timestamp from timestampgenerator: - https://timestampgenerator.com/)-->
-
-    <ttl> 1726820087 </ttl>
-
-
-
+    <ttl> 1726820566 </ttl>
 
 
     <item>
 
-        <!--(Blog Post Title)-->
+      <!--(Blog
+      Post Title)-->
 
-        <title> blog Introduction </title>
+      <title> blog Introduction </title>
 
-        <!--(Ex. https://(Website Title)/blog/blogpost.html)-->
+      <!--(Ex.
+      https://(Website Title)/blog/blogpost.html)-->
 
-        <link> https://fantasydragon14.neocities.org/blog/blog_introduction.html </link>
+      <link> https://fantasydragon14.neocities.org/blog/001_blog_introduction.html </link>
 
-        <!--(Copy and paste the html down there)-->
+      <!--(Copy
+      and paste the html down there)-->
 
-        <description><![CDATA[
+      <description><![CDATA[
 
 
 
@@ -57,31 +57,42 @@
 
         ]]> </description>
 
-        <!--(Date Blog Published - RFC 2822 - https://timestampgenerator.com/) (Ex. Thu, 11 Jan 2024 17:43:33 +0000)-->
+      <!--(Date
+      Blog Published - RFC 2822 - https://timestampgenerator.com/) (Ex. Thu, 11 Jan 2024 17:43:33
+      +0000)-->
 
-        <pubDate>Mon, 09 Sep 2024 09:05:17 +0000</pubDate>
+      <pubDate>Mon, 09 Sep 2024 09:05:17 +0000</pubDate>
 
-        <!--(Link back to the page) (Ex. https://(Website Title)/blog/blogpost.html)-->
+      <!--(Link
+      back to the page) (Ex. https://(Website Title)/blog/blogpost.html)-->
 
-        <guid>https://fantasydragon14.neocities.org/blog/blog_introduction.html </guid>
+      <guid>https://fantasydragon14.neocities.org/blog/001_blog_introduction.html </guid>
     </item>
 
     <item>
       <title> my reading recommendations</title>
-      <link>https://fantasydragon14.neocities.org/blog/reading.html</link>
+      <link>https://fantasydragon14.neocities.org/blog/002_reading.html</link>
       <description>a list of what I'm reading right now/what i recommend you could read</description>
-      <pubDate>Thu, 05 Sep 2024 08:13:53 +0000</pubDate>
-      <guid>https://fantasydragon14.neocities.org/blog/reading.html</guid>
+      <pubDate>Thu, 11 Sep 2024 08:13:53 +0000</pubDate>
+      <guid>https://fantasydragon14.neocities.org/blog/002_reading.html</guid>
     </item>
 
     <item>
       <title> I made a VSCode Extension!</title>
-      <link>https://fantasydragon14.neocities.org/blog/vscode_extension_dev.html</link>
+      <link>https://fantasydragon14.neocities.org/blog/003_vscode_extension_dev.html</link>
       <description>a blog post about my experience coding an extension for VSCode</description>
       <pubDate>Thu, 19 Sep 2024 08:13:53 +0000</pubDate>
-      <guid>https://fantasydragon14.neocities.org/blog/vscode_extension_dev.html</guid>
+      <guid>https://fantasydragon14.neocities.org/blog/003_vscode_extension_dev.html</guid>
     </item>
 
-</channel>
+    <item>
+      <title> RSS works now, properly</title>
+      <link>https://fantasydragon14.neocities.org/blog/004_rss_update.html</link>
+      <description>talk about rss and future plans</description>
+      <pubDate>Fri, 20 Sep 2024 08:22:46 +0000</pubDate>
+      <guid>https://fantasydragon14.neocities.org/blog/004_rss_update.html</guid>
+    </item>
+
+  </channel>
 
 </rss>
