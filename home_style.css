@@ -1,4 +1,4 @@
-/* style for regular blog posts */
+/*style for the nexus home world*/
 
 /*at the lowest level of the document*/
 :root {
@@ -39,4 +39,19 @@ body {
 #container {
   /*center div*/
   margin: 0 auto;
+}
+
+/*for all links in container: */
+#container a {
+  color: aqua;
+  font-weight: bold;
+  /* if you want to remove the underline
+  you can add a line below here that says:
+  text-decoration:none; */
+}
+
+/*no header and navbar in here*/
+
+#menu {
+  
 }
