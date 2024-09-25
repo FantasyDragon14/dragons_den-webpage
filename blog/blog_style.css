@@ -5,10 +5,12 @@
   /* variables: */
   --default_bg_img: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
 
+  --max_width: 800px
+
   /* colors */
   --color_text: #320648;
   --color_borders: #320648;
-  --color_bg: #320648;
+  --color_bg: #00737dc7;
 }
 
 /*Custom Font*/
@@ -39,4 +41,84 @@ body {
 #container {
   /*center div*/
   margin: 0 auto;
+
+  max-width: 800px;
+}
+
+#navbar {
+  height: 40px;
+  background-color: var(--color_bg);
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+#navbar li {
+  padding-top: 10px;
+}
+
+#navbar li a {
+  color: aqua;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+a {
+  color: aqua;
+}
+a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+
+
+#flex {
+  display: flex;
+}
+
+main {
+
+  background-color: var(--color_bg);
+
+  flex: 1;
+
+  padding: 20px;
+
+  order: 2;
+
+}
+
+aside {
+
+  background-color:var(--color_bg);
+
+  width: 200px;
+
+  padding: 20px;
+
+  font-size: smaller;
+
+  /* this makes the sidebar text slightly smaller */
+
+}
+
+@media only screen and (max-width: var(--max_width)) {
+  #flex {
+    flex-wrap: wrap;
+  }
+  aside {
+    width: 100%;
+  }
 }
