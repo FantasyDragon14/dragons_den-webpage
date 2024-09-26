@@ -3,11 +3,10 @@
 /*at the lowest level of the document*/
 :root {
   /* variables: */
-  --default_bg_img: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
 
   /* colors */
-  --color_text: #320648;
-  --color_borders: #320648;
+  --color_text: #aa00ff;
+  --color_borders: #00ffbf;
   --color_bg: #320648;
 }
 
@@ -21,13 +20,14 @@ body {
 
   margin: 0;
 
-  color: aliceblue;
+  color: var(--color_text);
+
 
   background-color: var(--color_bg);
 
   /*if using repeating image as background set size: */
-  background-size: 65px;
-  background-image: var(--default_bg_img);
+  background: url(assets/backgrounds/clouds-bg.png) repeat;
+  animation: bg_scroll 10s linear infinite;
 }
 
 /*selects all elements*/
@@ -50,8 +50,13 @@ body {
   text-decoration:none; */
 }
 
-/*no header and navbar in here*/
+/*no header and navbar in here?*/
 
-#menu {
-  
+
+
+
+@keyframes bg_scroll {
+  to {
+    background-position: -256px 0;
+  }
 }
