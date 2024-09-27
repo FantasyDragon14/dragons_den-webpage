@@ -10,7 +10,7 @@
 
     <link>https://fantasydragon14.neocities.org/</link>
 
-    <atom:link href="https://fantasydragon14.neocities.org/index.xml" rel="self"
+    <atom:link href="https://fantasydragon14.neocities.org/blog/rss.xml" rel="self"
       type="application/rss+xml" />
 
     <description>FantasyDragon14's blog. Here's gonna be updates to my projects (mostly my
@@ -22,13 +22,23 @@
     <lastBuildDate>
 
       <!--get
-      build date from timestampgenerator: RFC 2822 - https://timestampgenerator.com/)--> Fri, 20 Sep 2024 08:22:46 +0000 </lastBuildDate>
+      build date from timestampgenerator: RFC 2822 - https://timestampgenerator.com/)--> Fri, 27 Sep 2024 09:50:04 +0000
+    </lastBuildDate>
 
     <!--get
     timestamp from timestampgenerator: - https://timestampgenerator.com/)-->
 
-    <ttl> 1726820566 </ttl>
+    <ttl> 1727430604 </ttl>
 
+    <item>
+      <title>example</title>
+      <link> https://fantasydragon14.neocities.org/blog/000_blog_template.html </link>
+      <description>
+
+      </description>
+      <pubDate></pubDate>
+      <guid>https://fantasydragon14.neocities.org/blog/000_blog_template.html</guid>
+    </item>
 
     <item>
 
@@ -64,7 +74,7 @@
       <pubDate>Mon, 09 Sep 2024 09:05:17 +0000</pubDate>
 
       <!--(Link
-      back to the page) (Ex. https://(Website Title)/blog/blogpost.html)-->
+      back to the page) (Ex. https://fantasydragon14.neocities.org/blog/blogpost.html)-->
 
       <guid>https://fantasydragon14.neocities.org/blog/001_blog_introduction.html </guid>
     </item>
@@ -91,6 +101,16 @@
       <description>talk about rss and future plans</description>
       <pubDate>Fri, 20 Sep 2024 08:22:46 +0000</pubDate>
       <guid>https://fantasydragon14.neocities.org/blog/004_rss_update.html</guid>
+    </item>
+
+    <item>
+      <title>example</title>
+      <link> https://fantasydragon14.neocities.org/blog/005_backgrounds_and_animation.html </link>
+      <description>
+        me talking about how css animation is fun and confusing
+      </description>
+      <pubDate>Fri, 27 Sep 2024 09:39:15 +0000</pubDate>
+      <guid>https://fantasydragon14.neocities.org/blog/005_backgrounds_and_animation.html</guid>
     </item>
 
   </channel>
