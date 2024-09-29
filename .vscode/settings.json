@@ -1,0 +1,7 @@
+{
+        "editor.tabSize": 2,
+        "editor.linkedEditing": true,
+        "files.trimTrailingWhitespace": true,
+        "editor.wordWrap": "on",
+        "files.autoSave": "onFocusChange"
+      }
