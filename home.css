@@ -1,13 +1,18 @@
-/*style for the nexus home world*/
+/*style for the nexus home world / hub island*/
 
 /*at the lowest level of the document*/
 :root {
   /* variables: */
+  --pillar-height: 400px;
 
   /* colors */
   --color_text: #aa00ff;
   --color_borders: #00ffbf;
-  --color_bg: #320648;
+}
+
+/*selects all elements*/
+* {
+  box-sizing: border-box;
 }
 
 /*Custom Font*/
@@ -19,43 +24,94 @@ body {
   /*put custom Font in there i guess. (but with quotes ' ' ) */
 
   margin: 0;
-  min-height: 100vh;
+  min-height: 100%;
+
+  text-align: center;
 
   color: var(--color_text);
 
   background: radial-gradient(ellipse at top left, rgb(217, 241, 255), rgb(69, 184, 255) 100%); /*sick ass background gradient */
-}
-#bg-container {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#bg-container li {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  animation: bg_scroll 10s linear infinite;
-  background-repeat:repeat-x;
+  overflow-x: hidden;
 }
 
-/*selects all elements*/
-* {
-  box-sizing: border-box;
+/*not the element <menu> but the element with id="menu" */
+/*wrapper for the videogame style menu framed by pillars*/
+#menu {
+  display: flex;
+  right: 50%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+  /*temp border for testing*/
+  /*border: 2px solid black;*/
+
+  justify-content: space-evenly;
+
+}
+
+#main-menu {
+  background-color: rgba(28, 141, 169, 0.539);
+  border:5px outset #00ffbf;
+  border-radius: 20px;
+  min-width: 80%;
+  height: fit-content;
+  max-height: var(--pillar-height);
+  overflow-y: auto;
+  z-index: 10;
+}
+/*gonna use display: grid here*/
+
+
+#main-menu button {
+  background-color: rgb(132, 132, 132);
+}
+
+.pillar {
+  width: 75px;
+  height: 400px;
+  z-index: 9;
+}
+/*
+.pillar:nth-of-type(1) {
+  transform: translateX(+50%);
+}
+.pillar:nth-of-type(2) {
+  transform: translateX(-50%);
+}
+*/
+
+
+
+
+/* sets properties of elements with !CLASS! flex*/
+.flex {
+  display: flex;
+}
+@media only screen and (max-width: 800px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  aside {
+    width: 100%;
+  }
+
+  .pillar {
+    transform: translateX();
+  }
+
 }
 
 /*used to set the properties of div with id=container */
-#container {
+.container {
   /*center div*/
   margin: 0 auto;
 }
 
 /*for all links in container: */
-#container a {
+.container a {
   color: aqua;
   font-weight: bold;
   /* if you want to remove the underline
@@ -65,8 +121,34 @@ body {
 
 /*no header and navbar in here?*/
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
+.pixelart {
+  image-rendering: pixelated;
+}
 
+#bg-container {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#bg-container li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1024px;
+  animation: bg_scroll 10s linear infinite;
+  background-color: rgb(242, 250, 255);
+}
 
 @keyframes bg_scroll {
   to {
