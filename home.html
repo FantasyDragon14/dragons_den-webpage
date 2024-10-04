@@ -6,10 +6,7 @@
 
     <meta charset="UTF-8">
 
-    <!--
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    uncomment if mobile-ready
-    -->
 
     <title>Main hub FantasyDragons website</title>
 
@@ -23,11 +20,25 @@
     <link href="/assets/favicons/favicon-den.png" rel="icon" type="image/png">
 
     <link href="https://fantasydragon14.neocities.org/blog/rss..xml"
-      rel="alternate" type="application/rss+xml" title="The Dragons Blog" />.
+      rel="alternate" type="application/rss+xml" title="The Dragons Blog" />
 
-      <meta http-equiv="refresh" content="0; url='/hub.html'">
+      <meta http-equiv="refresh" content="60; url='/hub.html'">
   </head>
 
-  <body>
+  <body style="height: 100vh;">
+    <div id="bg-container">
+      <ul>
+        <li style="height: 100%; margin-top: 300px;"></li>
+        <!-- removes the damn gap/repeat at the bottom of the page by filling it with white -->
+        <li
+          style="background: url(/assets/backgrounds/clouds/1.png); animation-duration: 60s;"></li>
+        <li
+          style="background: url(/assets/backgrounds/clouds/2.png); animation-duration: 40s;"></li>
+        <li
+          style="background: url(/assets/backgrounds/clouds/3.png); animation-duration: 20s;"></li>
+        <li
+          style="background: url(/assets/backgrounds/clouds/4.png); animation-duration: 10s;"></li>
+      </ul>
+    </div>
     redirect to hub shortly...
   </body>
