@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuromancer Cyberspace Navigator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #000;
+            color: #0f0;
+        }
+
+        #cyberspace {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+
+        .data-stream {
+            position: absolute;
+            width: 2px;
+            background: linear-gradient(to bottom, transparent, #0f0, transparent);
+            transform-style: preserve-3d;
+            animation: dataFlow 5s linear infinite;
+        }
+
+        @keyframes dataFlow {
+            0% { transform: translateZ(1000px); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateZ(-1000px); opacity: 0; }
+        }
+
+        .node {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 255, 0, 0.2);
+            border: 2px solid #0f0;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            transform-style: preserve-3d;
+        }
+
+        .node:hover {
+            background-color: rgba(0, 255, 0, 0.5);
+            box-shadow: 0 0 20px #0f0;
+        }
+
+        #hud {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+        }
+
+        #console {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 1px solid #0f0;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            overflow-y: auto;
+        }
+
+        #input {
+            position: absolute;
+            bottom: 140px;
+            left: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 1px solid #0f0;
+            color: #0f0;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        .glitch {
+            animation: glitch 0.5s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0) }
+            20% { transform: translate(-2px, 2px) }
+            40% { transform: translate(-2px, -2px) }
+            60% { transform: translate(2px, 2px) }
+            80% { transform: translate(2px, -2px) }
+            100% { transform: translate(0) }
+        }
+    </style>
+</head>
+<body>
+    <div id="cyberspace"></div>
+    <div id="hud">
+        <div> <a href="/home.html">HUB</a> | <a href="/dragons-den/playground/index.html">TESTMATRIX</a>| <a href="https://codepen.io/aeon-flexx-dead-girl/pen/PorEvLe">SOURCE</a> </div>
+        <div>ICE Level: <span id="ice-level">0</span></div>
+        <div>Data Fragments: <span id="data-fragments">0</span></div>
+    </div>
+    <input type="text" id="input" placeholder="Enter command...">
+    <div id="console"></div>
+
+    <script>
+        const cyberspace = document.getElementById('cyberspace');
+        const consoleOutput = document.getElementById('console');
+        const input = document.getElementById('input');
+        const iceLevel = document.getElementById('ice-level');
+        const dataFragments = document.getElementById('data-fragments');
+
+        let ice = 0;
+        let fragments = 0;
+
+        function createDataStream() {
+            const stream = document.createElement('div');
+            stream.classList.add('data-stream');
+            stream.style.height = `${Math.random() * 200 + 100}px`;
+            stream.style.left = `${Math.random() * 100}%`;
+            stream.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            cyberspace.appendChild(stream);
+
+            setTimeout(() => {
+                cyberspace.removeChild(stream);
+            }, 5000);
+        }
+
+        function createNode() {
+            const node = document.createElement('div');
+            node.classList.add('node');
+            node.textContent = Math.random().toString(16).substr(2, 8);
+            node.style.left = `${Math.random() * 90 + 5}%`;
+            node.style.top = `${Math.random() * 90 + 5}%`;
+            node.style.transform = `translateZ(${Math.random() * 1000 - 500}px)`;
+
+            node.addEventListener('click', () => {
+                fragments++;
+                dataFragments.textContent = fragments;
+                node.classList.add('glitch');
+                setTimeout(() => {
+                    cyberspace.removeChild(node);
+                }, 1000);
+                log(`Data fragment ${node.textContent} acquired.`);
+            });
+
+            cyberspace.appendChild(node);
+        }
+
+        function log(message) {
+            const entry = document.createElement('div');
+            entry.textContent = `> ${message}`;
+            consoleOutput.appendChild(entry);
+            consoleOutput.scrollTop = consoleOutput.scrollHeight;
+        }
+
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const command = input.value.toLowerCase();
+                log(input.value);
+                input.value = '';
+
+                if (command === 'hack') {
+                    ice = Math.max(0, ice - 10);
+                    iceLevel.textContent = ice;
+                    log('Attempting to breach ICE...');
+                } else if (command === 'scan') {
+                    for (let i = 0; i < 5; i++) {
+                        createNode();
+                    }
+                    log('Scanning for data nodes...');
+                } else if (command === 'exit') {
+                    log('Jacking out...');
+                    setTimeout(() => {
+                        location.reload();
+                    }, 2000);
+                } else {
+                    log('Unknown command. Try "hack", "scan", or "exit".');
+                }
+            }
+        });
+
+        setInterval(createDataStream, 200);
+        setInterval(() => {
+            ice = Math.min(100, ice + 1);
+            iceLevel.textContent = ice;
+        }, 1000);
+
+        for (let i = 0; i < 20; i++) {
+            createNode();
+        }
+
+        log("Welcome to cyberspace, cowboy. What's your play?");
+    </script>
+</body>
+</html>
