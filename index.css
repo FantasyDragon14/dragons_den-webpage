@@ -1,0 +1,21 @@
+
+#bg-container {}
+
+#portal {}
+
+aside {}
+
+#dragon {}
+
+#lava-lamp {}
+
+.flex {
+  display: flex;
+}
+
+/*switch to mobile layout: */
+@media only screen and (max-width: 800px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
