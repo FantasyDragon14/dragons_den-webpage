@@ -3,52 +3,18 @@
 <html>
   <head>
     <title>'borrowed' code</title>
-    <link href="/dragons-den/playground/vaporwave/bg.css" rel="stylesheet" type="text/css" media="all">
+    <link href="bg.css" rel="stylesheet"
+      type="text/css" media="all">
     <link href="/assets/favicons/favicon-vaporwave.png" rel="icon"
       type="image/png">
   </head>
   <body>
 
-    <div class="overlays" style="--start: 9.068488935496381;">
-      <div class="overlay" id="overlay_sky"></div>
-      <div class="overlay" id="overlay_stars"></div>
-      <div class="overlay overlay_sun" id="overlay_sun">
-        <div class="overlay_sun-sun" id="overlay_sun-sun"></div>
-      </div>
-      <div class="overlay overlay_sun" id="overlay_sun2">
-        <div class="overlay_sun-sun" id="overlay_sun2-sun"></div>
-      </div>
-      <div class="overlay overlay_sun" id="overlay_sun3">
-        <div class="overlay_sun-sun" id="overlay_sun3-sun"></div>
-      </div>
-      <div class="overlay" id="overlay_floor">
-        <div id="overlay_floor-color"></div>
-        <div id="overlay_floor-grid"></div>
-        <div id="overlay_floor-horizon"></div>
-        <div id="overlay_floor-horizon2"></div>
-      </div>
-      <div class="overlay overlay_mountain" id="overlay_mountain">
-        <div class="overlay_mountain-mountain"
-          id="overlay_mountain-mountain"></div>
-      </div>
-      <div class="overlay" id="overlay_overlay"></div>
-    </div>
-    <style>
-  html *,
-  html *:before,
-  html *:after {
-    animation: var(--annie, none);
-  }
-  @keyframes --a {
-    0%,
-    5% {
-      filter: hue-rotate(30deg);
-    }
-    95%,
-    100% {
-      filter: hue-rotate(-120deg);
-    }
-  }
-</style>
+
+    <div id="sun"></div>
+    <div id="sunset"></div>
+    <canvas id="canvas"></canvas>
+    <script src="bg.js"></script>
+
   </body>
 </html>
