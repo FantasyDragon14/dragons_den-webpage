@@ -8,9 +8,9 @@
 
     <title>The Dragons Blog</title>
 
-    <link>https://fantasydragon14.neocities.org/blog/</link>
+    <link>https://fantasydragon.xyz/blog/</link>
 
-    <atom:link href="https://fantasydragon14.neocities.org/blog/rss.xml" rel="self"
+    <atom:link href="https://fantasydragon.xyz/blog/rss.xml" rel="self"
       type="application/rss+xml" />
 
     <description>FantasyDragon14's blog. Here's gonna be updates to my projects (mostly my
@@ -32,12 +32,12 @@
 
     <item>
       <title>example</title>
-      <link> https://fantasydragon14.neocities.org/blog/000_blog_template.html </link>
+      <link> https://fantasydragon.xyz/blog/000_blog_template.html </link>
       <description>
 
       </description>
       <pubDate></pubDate>
-      <guid>https://fantasydragon14.neocities.org/blog/000_blog_template.html</guid>
+      <guid>https://fantasydragon.xyz/blog/000_blog_template.html</guid>
     </item>
 
     <item>
@@ -50,7 +50,7 @@
       <!--(Ex.
       https://(Website Title)/blog/blogpost.html)-->
 
-      <link> https://fantasydragon14.neocities.org/blog/001_blog_introduction.html </link>
+      <link> https://fantasydragon.xyz/blog/001_blog_introduction.html </link>
 
       <!--(Copy
       and paste the html down there)-->
@@ -74,43 +74,43 @@
       <pubDate>Mon, 09 Sep 2024 09:05:17 +0000</pubDate>
 
       <!--(Link
-      back to the page) (Ex. https://fantasydragon14.neocities.org/blog/blogpost.html)-->
+      back to the page) (Ex. https://fantasydragon.xyz/blog/blogpost.html)-->
 
-      <guid>https://fantasydragon14.neocities.org/blog/001_blog_introduction.html </guid>
+      <guid>https://fantasydragon.xyz/blog/001_blog_introduction.html </guid>
     </item>
 
     <item>
       <title> my reading recommendations</title>
-      <link>https://fantasydragon14.neocities.org/blog/002_reading.html</link>
+      <link>https://fantasydragon.xyz/blog/002_reading.html</link>
       <description>a list of what I'm reading right now/what i recommend you could read</description>
       <pubDate>Thu, 11 Sep 2024 08:13:53 +0000</pubDate>
-      <guid>https://fantasydragon14.neocities.org/blog/002_reading.html</guid>
+      <guid>https://fantasydragon.xyz/blog/002_reading.html</guid>
     </item>
 
     <item>
       <title> I made a VSCode Extension!</title>
-      <link>https://fantasydragon14.neocities.org/blog/003_vscode_extension_dev.html</link>
+      <link>https://fantasydragon.xyz/blog/003_vscode_extension_dev.html</link>
       <description>a blog post about my experience coding an extension for VSCode</description>
       <pubDate>Thu, 19 Sep 2024 08:13:53 +0000</pubDate>
-      <guid>https://fantasydragon14.neocities.org/blog/003_vscode_extension_dev.html</guid>
+      <guid>https://fantasydragon.xyz/blog/003_vscode_extension_dev.html</guid>
     </item>
 
     <item>
       <title> RSS works now, properly</title>
-      <link>https://fantasydragon14.neocities.org/blog/004_rss_update.html</link>
+      <link>https://fantasydragon.xyz/blog/004_rss_update.html</link>
       <description>talk about rss and future plans</description>
       <pubDate>Fri, 20 Sep 2024 08:22:46 +0000</pubDate>
-      <guid>https://fantasydragon14.neocities.org/blog/004_rss_update.html</guid>
+      <guid>https://fantasydragon.xyz/blog/004_rss_update.html</guid>
     </item>
 
     <item>
       <title>css animation and backgrounds</title>
-      <link> https://fantasydragon14.neocities.org/blog/005_backgrounds_and_animation.html </link>
+      <link> https://fantasydragon.xyz/blog/005_backgrounds_and_animation.html </link>
       <description>
         me talking about how css animation is fun and confusing
       </description>
       <pubDate>Fri, 27 Sep 2024 09:39:15 +0000</pubDate>
-      <guid>https://fantasydragon14.neocities.org/blog/005_backgrounds_and_animation.html</guid>
+      <guid>https://fantasydragon.xyz/blog/005_backgrounds_and_animation.html</guid>
     </item>
 
   </channel>
