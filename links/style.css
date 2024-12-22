@@ -44,6 +44,15 @@ a[href^="http"] {
   background-position: left center;
 }
 
+a[href="/"] {
+  background-image: url(/assets/favicons/favicon-vaporwave.png);
+  background-size: 30px 30px;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  image-rendering: pixelated;
+}
+
 a[href*="fantasydragon.xyz"] {
   background-image: url(https://www.google.com/s2/favicons?domain=fantasydragon.xyz);
 }
@@ -129,13 +138,19 @@ a {
   display: block;
   margin: 10px;
   text-decoration: none;
+  color: aquamarine;
 }
 
 a:hover {
   text-decoration: underline;
+  color: aqua;
 }
-
-
+a:active {
+  color: white;
+}
+a:visited {
+  color: rgb(166, 0, 255);
+}
 
 /*for functionality*/
 .collapsible>input[type="checkbox"] {
