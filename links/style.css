@@ -1,0 +1,159 @@
+body {
+  background-color: rgb(11, 0, 20);
+  color: aquamarine;
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  position: relative;
+}
+
+.center {
+  align-items: center;
+  margin: auto;
+  width: 50%;
+}
+
+#pfp {
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+.level1 {
+  /*for cosmetics*/
+  align-items: center;
+  margin: 20px;
+}
+
+.level2 {
+  /*for cosmetics*/
+  align-items: center;
+  margin: 20px;
+}
+
+/*to add the little icons left of the links:*/
+a[href^="http"] {
+  padding-left: 19px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+a[href*="fantasydragon.xyz"] {
+  background-image: url(https://www.google.com/s2/favicons?domain=fantasydragon.xyz);
+}
+
+a[href*="pronouns.page"] {
+  background-image: url(https://www.google.com/s2/favicons?domain=pronouns.page);
+}
+
+a[href*="tumblr.com"] {
+  /* tumblr blog*/
+  background-image: url(https://www.google.com/s2/favicons?domain=tumblr.com);
+}
+
+/* a[href*="tumblr.com"] {
+  background-image: url(/assets/other_icons/tumblr_logo_icon_229308.png);
+} */
+
+a[href*="bsky.app"] {
+  /* bluesky profile*/
+  background-image: url(https://www.google.com/s2/favicons?domain=bsky.app);
+}
+
+a[href*="mastodon.social"] {
+  /* mastodon profile*/
+  background-image: url(https://www.google.com/s2/favicons?domain=mastodon.social);
+}
+
+a[href*="discord.fantasydragon.xyz"] {
+  /* discord server*/
+  background-image: url(https://www.google.com/s2/favicons?domain=discord.gg);
+}
+
+a[href*="revolt.fantasydragon.xyz"] {
+  /* revolt server*/
+  background-image: url(https://www.google.com/s2/favicons?domain=rvlt.gg);
+}
+
+a[href*="discordapp.com"] {
+  /* discord profile*/
+  background-image: url(https://www.google.com/s2/favicons?domain=discordapp.com);
+}
+
+a[href*="matrix.to"] {
+  /* matrix profile*/
+  background-image: url(https://www.google.com/s2/favicons?domain=matrix.org);
+}
+
+a[href*="mailto:"] {
+  /* all email*/
+  background-image: url(/assets/other_icons/e-mail.png);
+  padding-left: 19px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+a[href*="steamcommunity.com"] {
+  /* steam profile and group*/
+  background-image: url(https://www.google.com/s2/favicons?domain=steamcommunity.com);
+}
+
+a[href*="minecraft.fantasydragon.xyz"] {
+  /* minecraft*/
+  background-image: url(https://www.google.com/s2/favicons?domain=minecraft.fantasydragon.xyz);
+}
+
+a[href*="github.com"] {
+  /* github profile*/
+  background-image: url(https://www.google.com/s2/favicons?domain=github.com);
+}
+
+a[href*="cyberdragon.fantasydragon.xyz"] {
+  /* cyberdragon website*/
+  background-image: url(https://www.google.com/s2/favicons?domain=cyberdragon.fantasydragon.xyz);
+}
+
+a[href*="neocities.org"] {
+  /* neocities profile*/
+  background-image: url(https://www.google.com/s2/favicons?domain=neocities.org);
+}
+
+a {
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*for functionality*/
+.collapsible>input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.collapsible .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 1s ease;
+}
+
+.collapsible>input[type="checkbox"]:checked~.content {
+  height: auto;
+  overflow: visible;
+}
+
+.collapsible label {
+  display: block;
+}
