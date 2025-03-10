@@ -2,6 +2,7 @@ body {
   background-color: rgb(11, 0, 20);
   color: aquamarine;
   font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  align-items: center;
 }
 
 .container {
@@ -16,7 +17,8 @@ body {
 .center {
   align-items: center;
   margin: auto;
-  width: 50%;
+  width: 75%;
+  min-width: 300px;
 }
 
 #pfp {
