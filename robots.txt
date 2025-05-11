@@ -1,0 +1,9 @@
+User-agent: \*
+Disallow: /blog/
+Disallow: /assets/
+Disallow: /buttons/
+Disallow: /gallery/
+Disallow: /dragons-den/playground/
+Disallow: /butlerian-jihad/
+Crawl-delay: 120
+Visit-time: 0200-0300
